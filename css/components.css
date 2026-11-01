@@ -1,7 +1,7 @@
 .u{font-size:calc(var(--u)*1)}
 i[data-icon]{display:inline-flex}
 i[data-icon] svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;display:block}
-.panel{background:linear-gradient(180deg,rgba(130,80,185,.22),rgba(38,14,56,.5));border:1.5px solid var(--border);border-radius:calc(var(--u)*1.7);box-shadow:0 0 calc(var(--u)*1.6) rgba(155,85,214,.45),inset 0 0 calc(var(--u)*1.4) rgba(196,155,232,.12);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.panel{background:linear-gradient(180deg,rgba(130,80,185,.14),rgba(38,14,56,.32));border:1.5px solid var(--border);border-radius:calc(var(--u)*1.7);box-shadow:0 0 calc(var(--u)*1.6) rgba(155,85,214,.45),inset 0 0 calc(var(--u)*1.4) rgba(196,155,232,.12);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
 /* Clock */
 .clock{left:1.5%;top:2.5%;width:24.76%;height:15.5%;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .clock .cs{position:absolute;left:5.5%;top:26%;font-size:calc(var(--u)*2.6);color:var(--lav-l);text-shadow:0 0 12px var(--primary)}
@@ -24,7 +24,7 @@ i[data-icon] svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width
 .bar:focus-visible{outline:2px solid var(--lav)}
 .bar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--lav));border-radius:4px;box-shadow:0 0 8px var(--primary)}
 .times{position:absolute;left:calc(var(--u)*10);right:calc(var(--u)*1.3);top:calc(var(--u)*6.25);display:flex;justify-content:space-between;font-size:calc(var(--u)*1.05);color:var(--lav)}
-.p-ctrl{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:calc(var(--u)*.45) calc(var(--u)*1.9);border-top:1px solid rgba(196,155,232,.5);border-radius:0 0 calc(var(--u)*1.7) calc(var(--u)*1.7);background:linear-gradient(180deg,rgba(12,4,22,.28),rgba(12,4,22,.48))}
+.p-ctrl{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:calc(var(--u)*.45) calc(var(--u)*1.9);border-top:1px solid rgba(196,155,232,.5);border-radius:0 0 calc(var(--u)*1.7) calc(var(--u)*1.7);background:linear-gradient(180deg,rgba(12,4,22,.12),rgba(12,4,22,.24))}
 .p-msg{grid-column:1/3;position:absolute;left:0;right:0;bottom:calc(var(--u)*-1.6);text-align:center;font-size:calc(var(--u)*.85);color:var(--lav);pointer-events:none}
 .ib{background:none;border:0;color:var(--lav-l);font-size:calc(var(--u)*1.5);padding:calc(var(--u)*.5);border-radius:50%;cursor:pointer;display:grid;place-items:center;transition:color .2s,background .2s,box-shadow .2s}
 .ib:hover,.ib:focus-visible{color:#fff;background:rgba(155,85,214,.28);outline:0}
@@ -32,7 +32,7 @@ i[data-icon] svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width
 .ib.play{width:calc(var(--u)*3.2);height:calc(var(--u)*3.2);border:1.5px solid var(--lav);box-shadow:0 0 14px rgba(155,85,214,.7),inset 0 0 10px rgba(155,85,214,.4);font-size:calc(var(--u)*1.6)}
 /* Social buttons: sizes/positions taken from the reference */
 .socials{position:static}
-.social{position:absolute;top:62.7%;height:8.5%;display:flex;align-items:center;gap:calc(var(--u)*1);padding:0 calc(var(--u)*1.7);border-radius:999px;border:1.5px solid var(--border);background:linear-gradient(180deg,rgba(130,80,185,.2),rgba(38,14,56,.5));box-shadow:0 0 calc(var(--u)*1.6) rgba(155,85,214,.45),inset 0 0 calc(var(--u)*1.2) rgba(196,155,232,.12);color:var(--lav-l);text-decoration:none;font-size:calc(var(--u)*1.8);backdrop-filter:blur(6px);transition:transform .25s,border-color .25s,filter .25s,box-shadow .25s}
+.social{position:absolute;top:62.7%;height:8.5%;display:flex;align-items:center;gap:calc(var(--u)*1);padding:0 calc(var(--u)*1.7);border-radius:999px;border:1.5px solid var(--border);background:linear-gradient(180deg,rgba(130,80,185,.12),rgba(38,14,56,.32));box-shadow:0 0 calc(var(--u)*1.6) rgba(155,85,214,.45),inset 0 0 calc(var(--u)*1.2) rgba(196,155,232,.12);color:var(--lav-l);text-decoration:none;font-size:calc(var(--u)*1.8);backdrop-filter:blur(3px);transition:transform .25s,border-color .25s,filter .25s,box-shadow .25s}
 .social img{width:calc(var(--u)*2.1);height:calc(var(--u)*2.1)}
 .social span{flex:1;text-align:center}
 .social i{font-size:calc(var(--u)*1.6)}
