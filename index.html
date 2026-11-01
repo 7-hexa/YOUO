@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUO</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <video id="bgVideo" autoplay muted loop playsinline preload="auto"></video>
+  <div class="overlay" id="overlayDark"></div>
+  <div class="overlay purple" id="overlayPurple"></div>
+</div>
+
+<div class="decor" aria-hidden="true">
+  <img class="decor-art" src="assets/images/decorations/wordmark.png" alt="">
+</div>
+
+<div class="stage-wrap">
+<main class="stage">
+  <h1 class="sr">YOUO</h1>
+
+  <section class="panel clock" aria-label="Clock">
+    <span class="cs">✦</span>
+    <div class="clock-time" id="clockTime">00:00:00</div>
+    <i class="rule"></i>
+    <div class="clock-date"><span>✦</span><span id="clockDate"></span><span>✦</span></div>
+  </section>
+
+  <section class="panel player" aria-label="Music player">
+    <img id="plCover" class="cover" src="" alt="Album artwork">
+    <div class="p-title" id="plTitle">—</div>
+    <div class="p-artist" id="plArtist">—</div>
+    <div class="eq" id="plEq" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
+    <div class="bar" id="plBar" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><div class="bar-fill" id="plFill"></div></div>
+    <div class="times"><span id="plCur">0:00</span><span id="plDur">0:00</span></div>
+    <div class="p-ctrl">
+      <button class="ib" id="plShuffle" aria-label="Shuffle" aria-pressed="false"><i data-icon="shuffle"></i></button>
+      <button class="ib" id="plPrev" aria-label="Previous"><i data-icon="prev"></i></button>
+      <button class="ib play" id="plPlay" aria-label="Play"><i data-icon="play"></i></button>
+      <button class="ib" id="plNext" aria-label="Next"><i data-icon="next"></i></button>
+      <button class="ib" id="plRepeat" aria-label="Repeat" aria-pressed="false"><i data-icon="repeat"></i></button>
+    </div>
+    <div class="p-msg" id="plMsg" role="status"></div>
+  </section>
+
+  <nav class="socials" aria-label="Social links">
+    <a class="social s-tiktok" data-key="tiktok" href="#" target="_blank" rel="noopener noreferrer"><img src="assets/icons/social/tiktok.svg" alt=""><span>TikTok</span><i data-icon="arrow"></i></a>
+    <a class="social s-instagram" data-key="instagram" href="#" target="_blank" rel="noopener noreferrer"><img src="assets/icons/social/instagram.svg" alt=""><span>Instagram</span><i data-icon="arrow"></i></a>
+    <a class="social s-discord" data-key="discord" href="#" target="_blank" rel="noopener noreferrer"><img src="assets/icons/social/discord.svg" alt=""><span>Discord</span><i data-icon="arrow"></i></a>
+    <a class="social s-facebook" data-key="facebook" href="#" target="_blank" rel="noopener noreferrer"><img src="assets/icons/social/facebook.svg" alt=""><span>Facebook</span><i data-icon="arrow"></i></a>
+  </nav>
+
+  <div class="dock-wrap">
+    <div class="dock panel" role="toolbar" aria-label="Controls">
+      <button class="ib" id="btnSound" aria-label="Unmute background video"><i data-icon="mute"></i></button>
+      <span class="sep"></span>
+      <button class="ib" id="btnSettings" aria-label="Settings" aria-expanded="false" aria-controls="settings"><i data-icon="settings"></i></button>
+      <span class="sep"></span>
+      <button class="ib" id="btnFull" aria-label="Fullscreen"><i data-icon="full"></i></button>
+    </div>
+    <div class="panel settings" id="settings" hidden>
+      <h2>Settings</h2>
+      <label>Dark overlay <input type="range" id="rngDark" min="0" max="90" value="55"></label>
+      <label>Purple overlay <input type="range" id="rngPurple" min="0" max="80" value="25"></label>
+      <label>Background video file <input type="file" id="fileVideo" accept="video/*"></label>
+      <label>Background video URL <input type="text" id="urlVideo" placeholder="assets/videos/PLACE_VIDEO_HERE.MP4"></label>
+      <div class="row"><button class="chip" id="applyVideo">Apply</button><button class="chip" id="resetSettings">Reset</button></div>
+    </div>
+  </div>
+</main>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/music-player.js"></script>
+<script src="js/video-background.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
