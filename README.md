@@ -6,7 +6,8 @@ Serve the folder over HTTP so the browser can load the background video. From th
 
 ## Replace your assets
 - **Browser tab icon:** replace `favicon.png` and `favicon.ico` to customize the YOUO crown favicon.
-- **Background video:** put it at `assets/videos/PLACE_VIDEO_HERE.MP4` (or use Settings → file/URL in the page). If missing, a dark purple fallback shows.
+- **Background video:** `assets/videos/PLACE_VIDEO_HERE.MP4` (or use Settings → file/URL in the page). If missing, a dark purple fallback shows.
+- **Birthday countdown:** edit `birthDate` in `js/config.js`; the page counts down to the next February 6.
 - **Music:** replace `assets/music/track-01.mp3` with the audio for the configured song.
 - **Album art:** the single configured song is “Snooze” by SZA and uses the original *SOS* album artwork from Apple Music.
 - **Social links:** edit `social` in `js/config.js`.
@@ -14,4 +15,4 @@ Serve the folder over HTTP so the browser can load the background video. From th
 - **Video appearance:** the background video uses a subtle 12% dark overlay by default, with no purple tint. Optional overlay controls are available in Settings and can be configured in `overlay` in `config.js`.
 
 ## Structure
-`css/` style, components, animations, responsive · `js/` config, clock, music-player, video-background, controls, settings, main.
+`css/` style, components, animations, responsive · `js/` config, birthday, music-player, video-background, controls, settings, main.

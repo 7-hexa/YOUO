@@ -28,11 +28,12 @@
 <main class="stage">
   <h1 class="sr">YOUO</h1>
 
-  <section class="panel clock" aria-label="Clock">
+  <section class="panel birthday" aria-label="Birthday countdown">
     <span class="cs">✦</span>
-    <div class="clock-time" id="clockTime">00:00:00</div>
+    <div class="birthday-label">Date of birth</div>
+    <div class="birthday-date" id="birthDate">2005/02/06</div>
     <i class="rule"></i>
-    <div class="clock-date"><span>✦</span><span id="clockDate"></span><span>✦</span></div>
+    <div class="birthday-countdown" id="birthdayCountdown" role="timer" aria-live="off"></div>
   </section>
 
   <section class="panel player" aria-label="Music player">
@@ -80,7 +81,7 @@
 </div>
 
 <script src="js/config.js"></script>
-<script src="js/clock.js"></script>
+<script src="js/birthday.js"></script>
 <script src="js/music-player.js"></script>
 <script src="js/video-background.js"></script>
 <script src="js/controls.js"></script>

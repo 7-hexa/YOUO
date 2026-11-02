@@ -2,16 +2,16 @@
 i[data-icon]{display:inline-flex}
 i[data-icon] svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;display:block}
 .panel{background:linear-gradient(180deg,rgba(130,80,185,.02),rgba(38,14,56,.06));border:1.5px solid var(--border);border-radius:calc(var(--u)*1.7);box-shadow:0 0 calc(var(--u)*1.6) rgba(155,85,214,.3),inset 0 0 calc(var(--u)*1.4) rgba(196,155,232,.03);backdrop-filter:blur(1px);-webkit-backdrop-filter:blur(1px)}
-/* Clock */
-.clock{left:1.5%;top:2.5%;width:24.76%;height:15.5%;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.clock .cs{position:absolute;left:5.5%;top:26%;font-size:calc(var(--u)*2.6);color:var(--lav-l);text-shadow:0 0 12px var(--primary)}
-.clock-time{display:flex;justify-content:center;align-items:baseline;gap:.08em;width:auto;white-space:nowrap;font-size:calc(var(--u)*3.7);line-height:1;color:#E8D6F8;text-shadow:0 0 18px rgba(196,155,232,.75);font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1}
-.clock-digit{flex:0 0 .58em;text-align:center}
-.clock-separator{flex:0 0 .32em;text-align:center}
-.clock-period{align-self:center;font-family:Arial,sans-serif;font-size:.23em;font-weight:600;letter-spacing:.04em}
-.clock .rule{display:block;width:78%;height:1px;margin:calc(var(--u)*.55) 0;background:linear-gradient(90deg,transparent,var(--lav),transparent)}
-.clock-date{display:flex;gap:calc(var(--u)*1.4);align-items:center;font-size:calc(var(--u)*1.35);color:var(--lav-l)}
-.clock-date span:not([id]){font-size:calc(var(--u)*.9);color:var(--lav)}
+/* Birthday countdown */
+.birthday{left:1.5%;top:2.5%;width:24.76%;height:15.5%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.birthday .cs{position:absolute;left:5.5%;top:26%;font-size:calc(var(--u)*2.6);color:var(--lav-l);text-shadow:0 0 12px var(--primary)}
+.birthday-label{font-size:calc(var(--u)*1.05);letter-spacing:.12em;text-transform:uppercase;color:var(--lav)}
+.birthday-date{font-size:calc(var(--u)*2.15);line-height:1.05;color:#E8D6F8;text-shadow:0 0 18px rgba(196,155,232,.75);font-variant-numeric:tabular-nums}
+.birthday .rule{display:block;width:78%;height:1px;margin:calc(var(--u)*.45) 0;background:linear-gradient(90deg,transparent,var(--lav),transparent)}
+.birthday-countdown{display:flex;justify-content:center;align-items:baseline;gap:calc(var(--u)*.75);white-space:nowrap;color:var(--lav-l);font-variant-numeric:tabular-nums}
+.birthday-unit{display:flex;align-items:baseline;gap:calc(var(--u)*.2)}
+.birthday-unit b{font-size:calc(var(--u)*1.35);font-weight:500;color:var(--white)}
+.birthday-unit small{font-size:calc(var(--u)*.85);color:var(--lav)}
 /* Player */
 .player{left:auto;right:1.5%;top:2.5%;width:27.15%;height:20.83%}
 .cover{position:absolute;left:calc(var(--u)*1.3);top:calc(var(--u)*1.1);width:calc(var(--u)*7.4);height:calc(var(--u)*5.2);border-radius:calc(var(--u)*.8);object-fit:cover;border:1px solid var(--border);background:var(--dark)}

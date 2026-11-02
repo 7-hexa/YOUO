@@ -19,6 +19,6 @@
   });
   document.addEventListener("DOMContentLoaded", () => {
     Y.renderIcons();
-    ["video", "clock", "player", "controls", "settings"].forEach(k => { try { Y[k].init(); } catch (e) { console.warn("YOUO:", k, e); } });
+    ["video", "birthday", "player", "controls", "settings"].forEach(k => { try { Y[k].init(); } catch (e) { console.warn("YOUO:", k, e); } });
   });
 })(window.YOUO);
