@@ -5,7 +5,7 @@ body{background:#0b0410;color:var(--lav-l);font-family:var(--serif)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .bg{position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse at 50% 40%,#2a1238 0%,#0b0410 70%)}
 .bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.overlay{position:absolute;inset:0;pointer-events:none;background:#05010a;opacity:0}
+.overlay{position:absolute;inset:0;pointer-events:none;background:#05010a;opacity:.12}
 .overlay.purple{background:var(--primary);mix-blend-mode:soft-light;opacity:0}
 /* Transparent wordmark artwork lets the background video show through. */
 .decor{position:fixed;inset:0;z-index:1;display:grid;place-items:center;pointer-events:none;overflow:hidden}

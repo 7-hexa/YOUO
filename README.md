@@ -11,7 +11,7 @@ Serve the folder over HTTP so the browser can load the background video. From th
 - **Album art:** the single configured song is “Snooze” by SZA and uses the original *SOS* album artwork from Apple Music.
 - **Social links:** edit `social` in `js/config.js`.
 - **Decorations/logo:** `assets/images/decorations/wordmark.png` is the YOUO crown, butterflies, and wordmark artwork, with a transparent background and a soft glow for readability.
-- **Video appearance:** the background video displays with no dark or purple overlay by default. Optional overlay controls are available in Settings and can be configured in `overlay` in `config.js`.
+- **Video appearance:** the background video uses a subtle 12% dark overlay by default, with no purple tint. Optional overlay controls are available in Settings and can be configured in `overlay` in `config.js`.
 
 ## Structure
 `css/` style, components, animations, responsive · `js/` config, clock, music-player, video-background, controls, settings, main.
