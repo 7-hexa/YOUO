@@ -9,8 +9,8 @@
 
     const tick = () => {
       const now = new Date();
-      let nextBirthday = new Date(now.getFullYear(), 1, 6);
-      if (nextBirthday <= now) nextBirthday = new Date(now.getFullYear() + 1, 1, 6);
+      let nextBirthday = new Date(now.getFullYear(), 1, 26);
+      if (nextBirthday <= now) nextBirthday = new Date(now.getFullYear() + 1, 1, 26);
 
       const secondsLeft = Math.floor((nextBirthday - now) / 1000);
       const days = Math.floor(secondsLeft / 86400);

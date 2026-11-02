@@ -6,11 +6,11 @@ i[data-icon] svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width
 .birthday{left:1.5%;top:2.5%;width:24.76%;height:15.5%;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .birthday .cs{position:absolute;left:5.5%;top:26%;font-size:calc(var(--u)*2.6);color:var(--lav-l);text-shadow:0 0 12px var(--primary)}
 .birthday-label{font-size:calc(var(--u)*1.05);letter-spacing:.12em;text-transform:uppercase;color:var(--lav)}
-.birthday-date{font-size:calc(var(--u)*2.15);line-height:1.05;color:#E8D6F8;text-shadow:0 0 18px rgba(196,155,232,.75);font-variant-numeric:tabular-nums}
+.birthday-date{font-family:Arial,sans-serif;font-size:calc(var(--u)*2.15);line-height:1.05;color:#E8D6F8;text-shadow:0 0 18px rgba(196,155,232,.75);font-variant-numeric:normal}
 .birthday .rule{display:block;width:78%;height:1px;margin:calc(var(--u)*.45) 0;background:linear-gradient(90deg,transparent,var(--lav),transparent)}
 .birthday-countdown{display:flex;justify-content:center;align-items:baseline;gap:calc(var(--u)*.75);white-space:nowrap;color:var(--lav-l);font-variant-numeric:tabular-nums}
 .birthday-unit{display:flex;align-items:baseline;gap:calc(var(--u)*.2)}
-.birthday-unit b{font-size:calc(var(--u)*1.35);font-weight:500;color:var(--white)}
+.birthday-unit b{font-family:Arial,sans-serif;font-size:calc(var(--u)*1.35);font-weight:400;color:var(--white);font-variant-numeric:normal}
 .birthday-unit small{font-size:calc(var(--u)*.85);color:var(--lav)}
 /* Player */
 .player{left:auto;right:1.5%;top:2.5%;width:27.15%;height:20.83%}
