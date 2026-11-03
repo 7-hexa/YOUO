@@ -11,6 +11,6 @@ window.YOUO.config = {
   birthDate: "2005-02-26",
   overlay: { dark: 12, purple: 0 },           // percent
   playlist: [
-    { title: "Snooze", artist: "SZA", src: "assets/music/track-01.mp3", cover: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/62/93/13/6293132e-20ff-67ab-3d1f-96bb6797a6ba/196589564955.jpg/600x600bb.jpg" }
+    { title: "Supernatural", artist: "Ariana Grande", src: "assets/music/track-01.mp3", cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028e7e2c150cdfe189f7584fc4" }
   ]
 };
