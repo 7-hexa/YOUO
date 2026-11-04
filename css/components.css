@@ -53,3 +53,17 @@ i[data-icon] svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width
 .row{display:flex;gap:8px}
 .chip{flex:1;background:rgba(155,85,214,.3);border:1px solid var(--border);color:var(--white);border-radius:20px;padding:5px;font:inherit;cursor:pointer}
 .chip:hover{background:rgba(155,85,214,.55)}
+.owner-entry{position:fixed;right:12px;bottom:10px;z-index:4;color:var(--lav-l);font:12px Arial,sans-serif;opacity:.5;text-decoration:none}
+.owner-entry:hover,.owner-entry:focus-visible{opacity:1}
+.owner-backdrop{position:fixed;inset:0;z-index:10;display:grid;place-items:center;padding:16px;background:rgba(5,1,10,.78);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.owner-backdrop[hidden],.owner-form[hidden]{display:none}
+.owner-panel{position:relative;width:min(440px,100%);max-height:90vh;overflow:auto;padding:28px;color:var(--lav-l)}
+.owner-panel h2{margin:0 36px 20px 0;color:var(--white);font-size:24px;font-weight:500}
+.owner-close{position:absolute;top:10px;right:14px;border:0;background:none;color:var(--lav-l);font-size:28px;cursor:pointer}
+.owner-form{display:grid;gap:12px}
+.owner-form label{display:grid;gap:5px;font:14px Arial,sans-serif}
+.owner-form input{width:100%;min-width:0;padding:9px;border:1px solid var(--border);border-radius:8px;background:rgba(5,1,10,.55);color:var(--white);font:14px Arial,sans-serif}
+.owner-form input[type=file]{font-size:12px}
+.owner-form .chip{min-height:38px;font:14px Arial,sans-serif}
+.owner-form .chip:disabled{opacity:.55;cursor:wait}
+.owner-status{min-height:1.4em;margin-top:14px;color:var(--lav-l);font:13px/1.4 Arial,sans-serif;overflow-wrap:anywhere}

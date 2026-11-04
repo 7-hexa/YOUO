@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/components.css?v=owner-music-2">
 <link rel="stylesheet" href="css/animations.css">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -80,12 +80,35 @@
 </main>
 </div>
 
-<script src="js/config.js"></script>
+<a class="owner-entry" href="?owner=1">Owner</a>
+<div class="owner-backdrop" id="ownerBackdrop" hidden>
+  <section class="panel owner-panel" id="ownerPanel" role="dialog" aria-modal="true" aria-labelledby="ownerTitle">
+    <button class="owner-close" id="ownerClose" type="button" aria-label="Close owner panel">×</button>
+    <h2 id="ownerTitle">Music settings</h2>
+    <form id="ownerLoginForm" class="owner-form">
+      <label>Email <input id="ownerEmail" type="email" autocomplete="username" required></label>
+      <label>Password <input id="ownerPassword" type="password" autocomplete="current-password" required></label>
+      <button class="chip" type="submit">Sign in</button>
+    </form>
+    <form id="ownerSongForm" class="owner-form" hidden>
+      <label>Song title <input id="ownerSongTitle" type="text" maxlength="160" required></label>
+      <label>Artist <input id="ownerSongArtist" type="text" maxlength="160" required></label>
+      <label>Audio file <input id="ownerAudioFile" type="file" accept="audio/*" required></label>
+      <label>Cover image <input id="ownerCoverFile" type="file" accept="image/jpeg,image/png,image/webp" required></label>
+      <button class="chip" type="submit">Save song for everyone</button>
+      <button class="chip" id="ownerSignOut" type="button">Sign out</button>
+    </form>
+    <p class="owner-status" id="ownerStatus" role="status" aria-live="polite"></p>
+  </section>
+</div>
+
+<script src="js/config.js?v=owner-music-2"></script>
 <script src="js/birthday.js"></script>
-<script src="js/music-player.js"></script>
+<script src="js/music-player.js?v=owner-music-2"></script>
+<script src="js/owner-music.js?v=owner-music-2"></script>
 <script src="js/video-background.js"></script>
 <script src="js/controls.js"></script>
 <script src="js/settings.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=owner-music-2"></script>
 </body>
 </html>

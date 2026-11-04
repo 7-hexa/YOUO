@@ -2,7 +2,7 @@
   const $ = id => document.getElementById(id);
   const fmt = s => isFinite(s) ? `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}` : "0:00";
   Y.player = { init() {
-    const list = Y.config.playlist || [];
+    let list = Y.config.playlist || [];
     if (!list.length) return;
     const a = new Audio(); a.preload = "metadata";
     let i = 0, shuffle = false, repeat = false, playbackRequested = false;
@@ -34,6 +34,16 @@
     const seek = x => { const r = $("plBar").getBoundingClientRect(); if (a.duration) a.currentTime = Math.min(1, Math.max(0, (x - r.left) / r.width)) * a.duration; };
     $("plBar").addEventListener("click", e => seek(e.clientX));
     $("plBar").addEventListener("keydown", e => { if (!a.duration) return; if (e.key === "ArrowRight") a.currentTime += 5; if (e.key === "ArrowLeft") a.currentTime -= 5; });
+    Y.player.setPlaylist = songs => {
+      if (!Array.isArray(songs) || !songs.length) throw new Error("At least one song is required.");
+      list = songs;
+      shuffle = false;
+      repeat = false;
+      playbackRequested = false;
+      a.pause();
+      load(0);
+      setPlayIcon(false);
+    };
     load(0); setPlayIcon(false);
   } };
 })(window.YOUO);

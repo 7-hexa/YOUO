@@ -17,8 +17,11 @@
     if (el.firstChild) return;
     el.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${P[el.dataset.icon] || ""}</svg>`;
   });
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", async () => {
     Y.renderIcons();
-    ["video", "birthday", "player", "controls", "settings"].forEach(k => { try { Y[k].init(); } catch (e) { console.warn("YOUO:", k, e); } });
+    for (const k of ["video", "birthday", "player", "controls", "settings"]) {
+      try { await Y[k].init(); } catch (e) { console.warn("YOUO:", k, e); }
+    }
+    try { await Y.ownerMusic.init(); } catch (e) { console.warn("YOUO: ownerMusic", e); }
   });
 })(window.YOUO);
