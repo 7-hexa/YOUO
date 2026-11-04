@@ -19,7 +19,7 @@
   });
   document.addEventListener("DOMContentLoaded", async () => {
     Y.renderIcons();
-    for (const k of ["video", "birthday", "player", "controls", "settings"]) {
+    for (const k of ["background", "birthday", "player", "controls", "settings"]) {
       try { await Y[k].init(); } catch (e) { console.warn("YOUO:", k, e); }
     }
     try { await Y.ownerMusic.init(); } catch (e) { console.warn("YOUO: ownerMusic", e); }

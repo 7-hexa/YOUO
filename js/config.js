@@ -7,7 +7,7 @@ window.YOUO.config = {
     discord: "https://discord.com/users/1521747026931482736",
     facebook: "https://www.facebook.com/share/1EwM7kyQQo/"
   },
-  videoSrc: "assets/videos/PLACE_VIDEO_HERE.MP4",
+  imageSrc: "assets/images/background.jpg?v=346523",
   birthDate: "2005-02-26",
   overlay: { dark: 12, purple: 0 },           // percent
   supabase: {
